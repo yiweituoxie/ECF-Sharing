@@ -30,7 +30,14 @@ public class MainActivity extends AppCompatActivity {
                 startActivity(new Intent(MainActivity.this, HttpTestActivity.class));
             }
         });
-        Button btnDB = findViewById(R.id.btn_fragment);
+        Button btnFragment = findViewById(R.id.btn_fragment);
+        btnFragment.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                startActivity(new Intent(MainActivity.this, PagerActivity.class));
+            }
+        });
+        Button btnDB = findViewById(R.id.btn_db);
         btnDB.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {

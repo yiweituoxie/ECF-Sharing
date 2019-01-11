@@ -27,6 +27,8 @@
         </activity>
         <activity android:name=".db.DbActivity">
 
+        </activity><activity android:name=".PagerActivity">
+
         </activity>
     </application>
 
