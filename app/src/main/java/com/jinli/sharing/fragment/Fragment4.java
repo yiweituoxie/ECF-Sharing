@@ -26,7 +26,7 @@ public class Fragment4 extends Fragment {
         content.setText("Fragment four");
     }
 
-    
+
 
 
 }
