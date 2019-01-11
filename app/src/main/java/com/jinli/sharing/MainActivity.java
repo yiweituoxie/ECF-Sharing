@@ -6,6 +6,7 @@ import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
 
+import com.jinli.sharing.db.DbActivity;
 import com.jinli.sharing.internet.HttpTestActivity;
 import com.jinli.sharing.mvvm.MvvmTestActivity;
 
@@ -27,6 +28,13 @@ public class MainActivity extends AppCompatActivity {
             @Override
             public void onClick(View v) {
                 startActivity(new Intent(MainActivity.this, HttpTestActivity.class));
+            }
+        });
+        Button btnDB = findViewById(R.id.btn_fragment);
+        btnDB.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                startActivity(new Intent(MainActivity.this, DbActivity.class));
             }
         });
     }
